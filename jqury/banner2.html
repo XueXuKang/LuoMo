@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../juqery/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box01{
+				width: 400px;
+				/*border: 3px solid red;*/
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.box02{
+				width: 2400px;
+				/*border: 3px solid black;*/
+				overflow: hidden;
+			}
+			img{
+				width: 400px;
+				/*因为图片既是内联元素，又是块元素，所以有空隙*/
+				/*不管任何元素有空隙，用浮动就可以解决*/
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<!--显示框-->
+		<div class="box01">
+			<!--移动框-->
+			<div class="box02">0
+				<img src="B%20(1).jpg"/>
+				<img src="B%20(2).jpg"/>
+				<img src="B%20(3).jpg"/>
+				<img src="B%20(4).jpg"/>
+				<img src="B%20(5).jpg"/>
+				<img src="B%20(6).jpg"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		setInterval(function (){
+			$(".box02").animate({
+				marginLeft:"-400px"
+			},1000,function () {
+				$("img:last").after($("img:first"))
+				$(".box02").css({
+				    "margin-left":"0px"
+				})
+            })
+        },2000)
+	</script>
+</html>

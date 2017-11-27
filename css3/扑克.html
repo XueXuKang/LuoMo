@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转的扑克</title>
+    <style>
+    .box{
+        height: 1000px;
+        width: 1200px;
+        position:relative;
+        background: deepskyblue;
+
+    }
+        .pk{
+            position: absolute;
+            top: 50px;
+            left:300px;
+            transition: all 1.5s;
+        }
+    .box:hover #pk1{
+        transform: rotate(15deg) scale(0);
+        transform-origin: 310px 438px;
+    }
+    .box:hover #pk2{
+        transform: rotate(60deg) scale(0.6);
+        transform-origin: 310px 438px;
+    }
+    .box:hover #pk3{
+        transform: rotate(120deg) scale(1.2);
+        transform-origin: 310px 438px;
+    }
+    .box:hover #pk4{
+        transform: rotate(180deg) scale(1.8);
+        transform-origin: 310px 438px;
+    }
+    .box:hover #pk5{
+        transform: rotate(240deg) scale(2.4);
+        transform-origin: 310px 438px;
+    }
+    .box:hover #pk6{
+        transform: rotate(300deg) scale(3);
+        transform-origin: 310px 438px;
+    }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="pk" id="pk1">
+        <img src="pk1.png" height="438" width="310"/>
+    </div>
+    <div class="pk" id="pk2">
+        <img src="pk2.png" height="438" width="310"/>
+    </div>
+    <div class="pk" id="pk3">
+        <img src="pk1.png" height="438" width="310"/>
+    </div>
+    <div class="pk" id="pk4">
+        <img src="pk2.png" height="438" width="310"/>
+    </div>
+    <div class="pk" id="pk5">
+        <img src="pk1.png" height="438" width="310"/>
+    </div>
+    <div class="pk" id="pk6">
+        <img src="pk2.png" height="438" width="310"/>
+    </div>
+</div>
+</body>
+</html>

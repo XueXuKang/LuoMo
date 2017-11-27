@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.</title>
+</head>
+<body>
+<div onmouseover="fun()" onmouseout="fun1()">
+    <div id="head" style="width:100PX;height: 100PX;">下拉菜单</div>
+
+    <div style="width: 300PX;height: 300PX;background-color: red;display: none;" id="ccc"></div>
+</div>
+
+
+<script>
+    function fun() {
+        var ccc=document.getElementById("ccc");
+        ccc.style.display="block";
+    }
+    function fun1() {
+        var ccc=document.getElementById("ccc");
+        ccc.style.display="none";
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    #b{
+        height: 200px;
+        width: 300px;
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+<button id="a">点我</button>
+<div id="b"></div>
+
+<script>
+    var e=document.getElementById("a");
+    var r=document.getElementById("b");
+    e.onclick=function () {
+        var z=getComputedStyle(r,null)
+        alert(z.backgroundColor+"宽"+z.width+"高"+z.height);
+        r.style.background="blue";
+    }
+
+
+
+</script>
+</body>
+</html>

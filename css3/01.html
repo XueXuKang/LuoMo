@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .da {
+            height: 20px;
+            width: 50px;
+            background: red;
+            text-align: center;
+        }
+        .a {
+            height: 200px;
+            width: 200px;
+            transition: all 1s;
+            transform: translate(0, 300px);
+            background: gray;
+        }
+        .da:hover .a {
+            transform: translate(300px, 50px) rotate(90deg) scale(0.5);
+        }
+    </style>
+</head>
+<body>
+<div style="height: 800px;width: 800px;">
+    <div class="da">
+        发射
+        <div class="a">
+            <img src="rocket.png" height="190" width="101"/>
+            <div>
+
+            </div>
+        </div>
+</body>
+</html>

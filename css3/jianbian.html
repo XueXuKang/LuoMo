@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes box {
+            0%{
+
+            }
+            100%{
+                transform: translate(2000px,0);
+            }
+        }
+        .box{
+            height: 300px;
+            width: 1800px;
+        }
+        .box1{
+         height: 300px;
+            width: 300px;
+            background: radial-gradient(at 50px 50px,white, green);
+            border-radius: 150px ;
+            transition: all 5s;
+            /*                   循环播放  动画曲线*/
+            animation: box 10s  infinite linear;
+            /*动画延时*/
+            animation-delay:5s ;
+            /*动画曲线*/
+            animation-timing-function: linear;
+            /*动画倒放*/
+            animation-direction: alternate-reverse;
+            /*动画暂停*/
+            animation-play-state: paused;
+        }
+        .box:hover .box1 {
+            transform: translate(1800px,0px) rotate(1800deg);
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"></div>
+    
+    
+</div>
+</body>
+</html>
